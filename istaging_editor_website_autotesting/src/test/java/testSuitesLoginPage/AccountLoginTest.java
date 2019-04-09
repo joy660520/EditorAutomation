@@ -1,18 +1,43 @@
 package testSuitesLoginPage;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.LogStatus;
 
 import pageObjects.LoginPage;
 
 public class AccountLoginTest extends LoginPageTest {
 	@Test
 	public void accountLoginTest() throws Exception {
-		driver.get(baseUrl);
-		log.info("打開了應用程式");
-		LoginPage.FillEmailTextBox(driver, "joy@staging.com.tw"); //可以輸入錯誤帳號會顯示帳號錯誤
-		LoginPage.FillPasswordTextBox(driver, "000000"); //可以輸入錯誤密碼會顯示密碼錯誤
+        
+		LoginPage.FillEmailTextBox(driver, "joy@staging.com.tw");
+		test.log(LogStatus.INFO, "Enter User Name...");
+
+		LoginPage.FillPasswordTextBox(driver, "000000");
+		test.log(LogStatus.INFO, "Enter User Password...");
+
 		LoginPage.clickLoginBtn(driver);
-		Thread.sleep(6000);
+		test.log(LogStatus.INFO, "Click Submit Btn...");
+
+		Thread.sleep(3000);
+
+		LoginPage.closeWelcome(driver);
+
+		WebElement primaryBtn = null;
+
+		try {
+			primaryBtn = driver.findElement(By.xpath("//a/img[@class='profile-image']"));
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		Assert.assertTrue(primaryBtn != null);
+		getScreenshots();
+		test.log(LogStatus.PASS, "Verified login successfully");
+
+		Thread.sleep(3000);
 
 	}
 }

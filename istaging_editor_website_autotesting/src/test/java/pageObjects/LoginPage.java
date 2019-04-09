@@ -322,7 +322,8 @@ public class LoginPage {
 	// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 	/*
-	 * 關閉歡迎提示 param driver public void closeWelcomeNote(WebDriver driver) {
+	 * 關閉歡迎提示 param driver 
+	 * public void closeWelcomeNote(WebDriver driver) {
 	 * element=driver.findElement(By.....) element.click();
 	 */
 

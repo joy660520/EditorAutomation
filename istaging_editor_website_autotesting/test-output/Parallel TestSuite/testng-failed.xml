@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Failed suite [Parallel TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="classes" name="Test createemptybuilding(failed)">
+    <classes>
+      <class name="com.vrmaker.signintest.TestNG_createemptybuilding">
+        <methods>
+          <include name="createEmptyBuilding"/>
+          <include name="VRmakerLoginTest"/>
+          <include name="dropDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.vrmaker.signintest.TestNG_createemptybuilding -->
+    </classes>
+  </test> <!-- Test createemptybuilding(failed) -->
+</suite> <!-- Failed suite [Parallel TestSuite] -->

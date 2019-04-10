@@ -39,7 +39,7 @@ public class LoginPageTest {
 
 	@BeforeClass
 	public void setUp() throws Exception {
-		baseUrl = "https://portal.istaging.com/login";
+		baseUrl = "https://vrportal-test.istaging.com/login";
 		report = new ExtentReports("/Users/joyshen/Documents/autotestingReport/logintest.html");
 		test = report.startTest("Verify if login successfully");
 		
@@ -56,17 +56,6 @@ public class LoginPageTest {
 		test.log(LogStatus.INFO, "Web Application Opened...");
 	}
 
-	public static String getRandomString() throws InterruptedException {
-		String s = UUID.randomUUID().toString();
-		return s.toString();
-	}
-	
-	public void getScreenshots() throws Exception {
-		String fileName = getRandomString() + ".png";
-		String directory = "/Users/joyshen/Documents/autotesting screenshot";
-		File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(sourceFile, new File(directory, fileName));
-	}
 	
 	@AfterMethod
 	public void tearDown(ITestResult testResult) throws Exception {
@@ -75,7 +64,7 @@ public class LoginPageTest {
 
 	@AfterClass
 	public void tearDown() throws Exception {
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		
 		if (this.finalTestResult.getStatus() == ITestResult.FAILURE) {
 			String path = (String) Screenshots.takeScreenshot(driver, finalTestResult.getName());
@@ -86,5 +75,17 @@ public class LoginPageTest {
 		driver.quit();
 		report.endTest(test);
 		report.flush();
+	}
+	
+	public static String getRandomString() throws InterruptedException {
+		String s = UUID.randomUUID().toString();
+		return s.toString();
+	}
+	
+	public void getScreenshots() throws Exception {
+		String fileName = getRandomString() + ".png";
+		String directory = "/Users/joyshen/Documents/autotesting screenshot";
+		File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileHandler.copy(sourceFile, new File(directory, fileName));
 	}
 }

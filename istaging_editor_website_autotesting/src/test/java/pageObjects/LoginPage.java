@@ -84,57 +84,118 @@ public class LoginPage {
 		element = driver.findElement(By.xpath("//a[@href='/signup']"));
 		return element;
 	}
-
 	public static void clickAccountCreate(WebDriver driver) {
 		element = accountCreate(driver);
 		element.click();
 	}
+	
 
 	public static WebElement createEmail(WebDriver driver) throws Exception {
 		Thread.sleep(5000);
 		element = driver.findElement(By.xpath("//input[@name='email']"));
 		return element;
 	}
-
 	public static void createEmailInput(WebDriver driver, String email) throws Exception {
 		element = createEmail(driver);
 		element.sendKeys(email);
 	}
+	
 
 	public static WebElement createPassword(WebDriver driver) {
 		element = driver.findElement(By.xpath("//input[@name='password']"));
 		return element;
 	}
-
 	public static void createPasswordInput(WebDriver driver, String password) throws Exception {
 		element = createPassword(driver);
 		element.sendKeys(password);
 	}
+	
 
 	public static WebElement confirmPassword(WebDriver driver) {
 		element = driver.findElement(By.xpath("//input[@name='confirmPassword']"));
 		return element;
 	}
-
 	public static void confirmPasswordInput(WebDriver driver, String password) throws Exception {
 		element = confirmPassword(driver);
 		element.sendKeys(password);
 	}
+	
 
 	public static WebElement submitbtn(WebDriver driver) {
 		element = driver.findElement(By.xpath("//button[@class='btn btn-block btn-primary']"));
 		return element;
 	}
+	public static void clickubmitbtn(WebDriver driver) {
+		element = submitbtn(driver);
+		element.click();
+	}
+	
 
 	public static WebElement signupName(WebDriver driver) {
 		element = driver.findElement(By.xpath("//input[@name='name']"));
 		return element;
 	}
-
 	public static void inputSingupName(WebDriver driver, String name) throws Exception {
 		element = signupName(driver);
 		element.sendKeys(name);
 	}
+	
+	
+	public static WebElement occupationBtn(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div/div[2]/form/form[2]/div[2]/div[1]/select"));
+		return element;
+	}
+	public static void clickOccupationBtn(WebDriver driver) throws Exception {
+		element = occupationBtn(driver);
+		element.click();
+	}
+	
+	
+	
+	public static WebElement occupation(WebDriver driver) {
+		element = driver.findElement(By.cssSelector("div option[value='4']"));
+		return element;
+	}
+	public static void selectOccupation(WebDriver driver) throws Exception {
+		element = occupation(driver);
+		element.click();
+	}
+	
+	
+	
+	public static WebElement countryBtn(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div/div[2]/form/form[2]/div[3]/div[1]/select"));
+		return element;
+	}
+	public static void clickCountryBtn(WebDriver driver) throws Exception {
+		element = countryBtn(driver);
+		element.click();
+	}
+	
+	
+	
+	public static WebElement country(WebDriver driver) {
+		element = driver.findElement(By.cssSelector("div option[value='TW']"));
+		return element;
+	}
+	public static void selectCountry(WebDriver driver) throws Exception {
+		element = country(driver);
+		element.click();
+	}
+	
+	
+	
+	public static WebElement registerBtn(WebDriver driver) {
+		element = driver.findElement(By.xpath("//button[@type='submit']"));
+		return element;
+	}
+	public static void clickRegisterBtn(WebDriver driver) throws Exception {
+		element = registerBtn(driver);
+		element.click();
+	}
+	
+	
+	
 
 	// ================================================================================================
 	// 截圖功能

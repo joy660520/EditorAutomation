@@ -21,7 +21,7 @@ public class CreateAccountTest extends LoginPageTest {
 		LoginPage.clickAccountCreate(driver);
 		test.log(LogStatus.INFO, "Click Create Btn...");
 		
-		LoginPage.emailInput(driver, "joytest01@staging.com.tw"); //可以輸入已存在帳號會顯示帳號已存在
+		LoginPage.emailInput(driver, "joytest01@staging.com.tw"); 
 		test.log(LogStatus.INFO, "Enter User Name...");
 		
 		LoginPage.createPasswordInput(driver, "000000");

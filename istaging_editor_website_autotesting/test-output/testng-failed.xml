@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testSuitesLoginPage.CreateAccountTest">
+      <class name="testSuitesLoginPage.FacebookLoginTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="tearDown"/>
-          <include name="createNewAccount"/>
+          <include name="facebookLoginTest"/>
         </methods>
-      </class> <!-- testSuitesLoginPage.CreateAccountTest -->
+      </class> <!-- testSuitesLoginPage.FacebookLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

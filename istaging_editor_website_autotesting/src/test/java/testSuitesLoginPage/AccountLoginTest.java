@@ -10,6 +10,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import pageObjects.LoginPage;
 
 public class AccountLoginTest extends LoginPageTest {
+	
 	@Test
 	public void accountLoginTest() throws Exception {
         

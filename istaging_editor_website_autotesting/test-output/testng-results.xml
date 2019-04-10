@@ -2,35 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19208" started-at="2019-04-10T03:44:00Z" finished-at="2019-04-10T03:44:19Z">
+  <suite name="Default suite" duration-ms="17966" started-at="2019-04-10T14:21:58Z" finished-at="2019-04-10T14:22:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19208" started-at="2019-04-10T03:44:00Z" finished-at="2019-04-10T03:44:19Z">
-      <class name="testSuitesLoginPage.CreateAccountTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuitesLoginPage.CreateAccountTest@4470f8a6]" name="setUp" is-config="true" duration-ms="4964" started-at="2019-04-10T03:44:00Z" finished-at="2019-04-10T03:44:05Z">
+    <test name="Default test" duration-ms="17966" started-at="2019-04-10T14:21:58Z" finished-at="2019-04-10T14:22:16Z">
+      <class name="testSuitesLoginPage.FacebookLoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuitesLoginPage.FacebookLoginTest@4470f8a6]" name="setUp" is-config="true" duration-ms="3840" started-at="2019-04-10T14:21:58Z" finished-at="2019-04-10T14:22:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createNewAccount()[pri:0, instance:testSuitesLoginPage.CreateAccountTest@4470f8a6]" name="createNewAccount" duration-ms="13920" started-at="2019-04-10T03:44:05Z" finished-at="2019-04-10T03:44:19Z">
+        <test-method status="PASS" signature="facebookLoginTest()[pri:0, instance:testSuitesLoginPage.FacebookLoginTest@4470f8a6]" name="facebookLoginTest" duration-ms="13758" started-at="2019-04-10T14:22:02Z" finished-at="2019-04-10T14:22:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewAccount -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuitesLoginPage.CreateAccountTest@4470f8a6]" name="tearDown" is-config="true" duration-ms="3" started-at="2019-04-10T03:44:19Z" finished-at="2019-04-10T03:44:19Z">
+        </test-method> <!-- facebookLoginTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuitesLoginPage.FacebookLoginTest@4470f8a6]" name="tearDown" is-config="true" duration-ms="2" started-at="2019-04-10T14:22:15Z" finished-at="2019-04-10T14:22:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createNewAccount status=SUCCESS method=CreateAccountTest.createNewAccount()[pri:0, instance:testSuitesLoginPage.CreateAccountTest@4470f8a6] output={null}]]]>
+                <![CDATA[[TestResult name=facebookLoginTest status=SUCCESS method=FacebookLoginTest.facebookLoginTest()[pri:0, instance:testSuitesLoginPage.FacebookLoginTest@4470f8a6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testSuitesLoginPage.CreateAccountTest@4470f8a6]" name="tearDown" is-config="true" duration-ms="302" started-at="2019-04-10T03:44:19Z" finished-at="2019-04-10T03:44:19Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testSuitesLoginPage.FacebookLoginTest@4470f8a6]" name="tearDown" is-config="true" duration-ms="350" started-at="2019-04-10T14:22:15Z" finished-at="2019-04-10T14:22:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testSuitesLoginPage.CreateAccountTest -->
+      </class> <!-- testSuitesLoginPage.FacebookLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

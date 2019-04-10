@@ -17,11 +17,8 @@ public class GoogleLoginTest extends LoginPageTest{
 		 driver.get(baseUrl);
 		// log.info("打開了應用程式");
 		 LoginPage.clickGoogleBtn(driver);
+		 Thread.sleep(2000);
 		
 		 }
-	 @AfterClass
-	 public void tearDown() throws Exception {
-	 	Thread.sleep(2000);
-//	 	driver.quit();
-	 }
+
 }

@@ -39,7 +39,7 @@ public class LoginPageTest {
 
 	@BeforeClass
 	public void setUp() throws Exception {
-		baseUrl = "https://vrportal-test.istaging.com/login";
+		baseUrl = "https://portal.istaging.com/login";
 		report = new ExtentReports("/Users/joyshen/Documents/autotestingReport/logintest.html");
 		test = report.startTest("Verify if login successfully");
 		
@@ -64,7 +64,7 @@ public class LoginPageTest {
 
 	@AfterClass
 	public void tearDown() throws Exception {
-//		Thread.sleep(2000);
+//		Thread.sleep(1000);
 		
 		if (this.finalTestResult.getStatus() == ITestResult.FAILURE) {
 			String path = (String) Screenshots.takeScreenshot(driver, finalTestResult.getName());

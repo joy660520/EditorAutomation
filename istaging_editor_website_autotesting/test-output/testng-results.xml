@@ -2,35 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17966" started-at="2019-04-10T14:21:58Z" finished-at="2019-04-10T14:22:16Z">
+  <suite name="Default suite" duration-ms="28664" started-at="2019-04-23T09:25:59Z" finished-at="2019-04-23T09:26:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17966" started-at="2019-04-10T14:21:58Z" finished-at="2019-04-10T14:22:16Z">
-      <class name="testSuitesLoginPage.FacebookLoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuitesLoginPage.FacebookLoginTest@4470f8a6]" name="setUp" is-config="true" duration-ms="3840" started-at="2019-04-10T14:21:58Z" finished-at="2019-04-10T14:22:02Z">
+    <test name="Default test" duration-ms="28664" started-at="2019-04-23T09:25:59Z" finished-at="2019-04-23T09:26:28Z">
+      <class name="testSuiteEditorPage.CopyLivetour">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuiteEditorPage.CopyLivetour@4470f8a6]" name="setUp" is-config="true" duration-ms="3313" started-at="2019-04-23T09:25:59Z" finished-at="2019-04-23T09:26:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="facebookLoginTest()[pri:0, instance:testSuitesLoginPage.FacebookLoginTest@4470f8a6]" name="facebookLoginTest" duration-ms="13758" started-at="2019-04-10T14:22:02Z" finished-at="2019-04-10T14:22:15Z">
+        <test-method status="PASS" signature="copyLivetour()[pri:0, instance:testSuiteEditorPage.CopyLivetour@4470f8a6]" name="copyLivetour" duration-ms="25045" started-at="2019-04-23T09:26:02Z" finished-at="2019-04-23T09:26:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- facebookLoginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuitesLoginPage.FacebookLoginTest@4470f8a6]" name="tearDown" is-config="true" duration-ms="2" started-at="2019-04-10T14:22:15Z" finished-at="2019-04-10T14:22:15Z">
+        </test-method> <!-- copyLivetour -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuiteEditorPage.CopyLivetour@4470f8a6]" name="tearDown" is-config="true" duration-ms="2" started-at="2019-04-23T09:26:27Z" finished-at="2019-04-23T09:26:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=facebookLoginTest status=SUCCESS method=FacebookLoginTest.facebookLoginTest()[pri:0, instance:testSuitesLoginPage.FacebookLoginTest@4470f8a6] output={null}]]]>
+                <![CDATA[[TestResult name=copyLivetour status=SUCCESS method=CopyLivetour.copyLivetour()[pri:0, instance:testSuiteEditorPage.CopyLivetour@4470f8a6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testSuitesLoginPage.FacebookLoginTest@4470f8a6]" name="tearDown" is-config="true" duration-ms="350" started-at="2019-04-10T14:22:15Z" finished-at="2019-04-10T14:22:16Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testSuiteEditorPage.CopyLivetour@4470f8a6]" name="tearDown" is-config="true" duration-ms="288" started-at="2019-04-23T09:26:27Z" finished-at="2019-04-23T09:26:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testSuitesLoginPage.FacebookLoginTest -->
+      </class> <!-- testSuiteEditorPage.CopyLivetour -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

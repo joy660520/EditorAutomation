@@ -2,35 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28664" started-at="2019-04-23T09:25:59Z" finished-at="2019-04-23T09:26:28Z">
+  <suite name="Default suite" duration-ms="19287" started-at="2019-05-14T09:33:22Z" finished-at="2019-05-14T09:33:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28664" started-at="2019-04-23T09:25:59Z" finished-at="2019-04-23T09:26:28Z">
-      <class name="testSuiteEditorPage.CopyLivetour">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuiteEditorPage.CopyLivetour@4470f8a6]" name="setUp" is-config="true" duration-ms="3313" started-at="2019-04-23T09:25:59Z" finished-at="2019-04-23T09:26:02Z">
+    <test name="Default test" duration-ms="19287" started-at="2019-05-14T09:33:22Z" finished-at="2019-05-14T09:33:42Z">
+      <class name="testSuitesLoginPage.AccountLogoutTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuitesLoginPage.AccountLogoutTest@484970b0]" name="setUp" is-config="true" duration-ms="3858" started-at="2019-05-14T09:33:22Z" finished-at="2019-05-14T09:33:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="copyLivetour()[pri:0, instance:testSuiteEditorPage.CopyLivetour@4470f8a6]" name="copyLivetour" duration-ms="25045" started-at="2019-04-23T09:26:02Z" finished-at="2019-04-23T09:26:27Z">
+        <test-method status="PASS" signature="accountLoginTest()[pri:0, instance:testSuitesLoginPage.AccountLogoutTest@484970b0]" name="accountLoginTest" duration-ms="14980" started-at="2019-05-14T09:33:26Z" finished-at="2019-05-14T09:33:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- copyLivetour -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuiteEditorPage.CopyLivetour@4470f8a6]" name="tearDown" is-config="true" duration-ms="2" started-at="2019-04-23T09:26:27Z" finished-at="2019-04-23T09:26:27Z">
+        </test-method> <!-- accountLoginTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuitesLoginPage.AccountLogoutTest@484970b0]" name="tearDown" is-config="true" duration-ms="433" started-at="2019-05-14T09:33:41Z" finished-at="2019-05-14T09:33:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=copyLivetour status=SUCCESS method=CopyLivetour.copyLivetour()[pri:0, instance:testSuiteEditorPage.CopyLivetour@4470f8a6] output={null}]]]>
+                <![CDATA[[TestResult name=accountLoginTest status=SUCCESS method=AccountLogoutTest.accountLoginTest()[pri:0, instance:testSuitesLoginPage.AccountLogoutTest@484970b0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testSuiteEditorPage.CopyLivetour@4470f8a6]" name="tearDown" is-config="true" duration-ms="288" started-at="2019-04-23T09:26:27Z" finished-at="2019-04-23T09:26:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testSuiteEditorPage.CopyLivetour -->
+      </class> <!-- testSuitesLoginPage.AccountLogoutTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

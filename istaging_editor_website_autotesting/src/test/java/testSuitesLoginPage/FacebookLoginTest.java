@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import pageObjects.LoginPage;
-import pageObjects.EditorPage;
+import pageObjects.BuildingListPage;
 import utilities.Screenshots;
 
 public class FacebookLoginTest extends LoginPageTest{

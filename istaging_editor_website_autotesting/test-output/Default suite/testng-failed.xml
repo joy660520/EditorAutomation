@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testSuiteEditorPage.CopyLivetour">
+      <class name="testSuitesLoginPage.AccountLogoutTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="copyLivetour"/>
+          <include name="tearDown"/>
+          <include name="accountLoginTest"/>
         </methods>
-      </class> <!-- testSuiteEditorPage.CopyLivetour -->
+      </class> <!-- testSuitesLoginPage.AccountLogoutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

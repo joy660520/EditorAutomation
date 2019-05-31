@@ -1,0 +1,20 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Extent TestSuite" parallel="tests" thread-count="1">
+	<test name="Login Test">
+		<classes>
+			<class name="testSuitesLoginPage.AccountLoginTest"></class>
+		</classes>
+	</test>
+	<test name="Create New Livetour Test">
+		<classes>
+			<class name="testSuiteEditorBuildingListPage.CreateNewLivetour"></class>
+		</classes>
+	</test>
+	<test name="Delete Livetour Test">
+		<classes>
+			<class name="testSuiteEditorBuildingListPage.DeleteLivetour"></class>
+		</classes>
+	</test>
+
+</suite>

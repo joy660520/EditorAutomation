@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Extent TestSuite]" parallel="tests">
+  <test thread-count="5" name="Delete Livetour Test(failed)" parallel="tests">
+    <classes>
+      <class name="testSuiteEditorBuildingListPage.DeleteLivetour">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="copyLivetour"/>
+        </methods>
+      </class> <!-- testSuiteEditorBuildingListPage.DeleteLivetour -->
+    </classes>
+  </test> <!-- Delete Livetour Test(failed) -->
+</suite> <!-- Failed suite [Extent TestSuite] -->

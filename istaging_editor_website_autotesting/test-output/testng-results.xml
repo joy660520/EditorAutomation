@@ -2,31 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19287" started-at="2019-05-14T09:33:22Z" finished-at="2019-05-14T09:33:42Z">
+  <suite name="Default suite" duration-ms="34476" started-at="2019-06-01T03:08:42Z" finished-at="2019-06-01T03:09:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19287" started-at="2019-05-14T09:33:22Z" finished-at="2019-05-14T09:33:42Z">
-      <class name="testSuitesLoginPage.AccountLogoutTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuitesLoginPage.AccountLogoutTest@484970b0]" name="setUp" is-config="true" duration-ms="3858" started-at="2019-05-14T09:33:22Z" finished-at="2019-05-14T09:33:26Z">
+    <test name="Default test" duration-ms="34476" started-at="2019-06-01T03:08:42Z" finished-at="2019-06-01T03:09:17Z">
+      <class name="apiAutomation.APIGetPanoInfo">
+        <test-method status="PASS" signature="checkCubemapReady()[pri:0, instance:apiAutomation.APIGetPanoInfo@32a068d1]" name="checkCubemapReady" duration-ms="34452" started-at="2019-06-01T03:08:42Z" finished-at="2019-06-01T03:09:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="accountLoginTest()[pri:0, instance:testSuitesLoginPage.AccountLogoutTest@484970b0]" name="accountLoginTest" duration-ms="14980" started-at="2019-05-14T09:33:26Z" finished-at="2019-05-14T09:33:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- accountLoginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuitesLoginPage.AccountLogoutTest@484970b0]" name="tearDown" is-config="true" duration-ms="433" started-at="2019-05-14T09:33:41Z" finished-at="2019-05-14T09:33:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=accountLoginTest status=SUCCESS method=AccountLogoutTest.accountLoginTest()[pri:0, instance:testSuitesLoginPage.AccountLogoutTest@484970b0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testSuitesLoginPage.AccountLogoutTest -->
+        </test-method> <!-- checkCubemapReady -->
+      </class> <!-- apiAutomation.APIGetPanoInfo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

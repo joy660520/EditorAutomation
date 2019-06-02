@@ -29,6 +29,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import pageObjects.LoginPage;
 import pageObjects.BuildingListPage;
 import utilities.ExtentFactory;
+import utilities.GenericMethods;
 import utilities.Screenshots;
 
 public class JsLoginPageTest {
@@ -40,6 +41,7 @@ public class JsLoginPageTest {
 	public ExtentTest test;
 	ITestResult finalTestResult;
 	protected JavascriptExecutor js;
+	protected GenericMethods gm;
 
 	@BeforeClass
 	public void setUp() throws Exception {

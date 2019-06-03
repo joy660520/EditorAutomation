@@ -21,7 +21,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
-import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -50,7 +49,7 @@ public class JsLoginPageTest {
 		test = report.startTest("Verify if create new livetour successfully");
 		
 
-		System.setProperty("webdriver.chrome.driver", "/Users/joyshen/eclipse-workspace/Selenium/chromedriver");
+		
 		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
 		test.log(LogStatus.INFO, "Browser started...");

@@ -43,6 +43,7 @@ public class LoginPageTest {
 		test = report.startTest("Verify if login successfully");
 
 //		System.setProperty("webdriver.chrome.driver", "/Users/joyshen/eclipse-workspace/Selenium/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/mac-mini-slave/jenkins-k8s/workspace/istaging_editor_website_autotesting/istaging_editor_website_autotesting/chromedriver");
 		driver = new ChromeDriver();
 		test.log(LogStatus.INFO, "Browser started...");
 

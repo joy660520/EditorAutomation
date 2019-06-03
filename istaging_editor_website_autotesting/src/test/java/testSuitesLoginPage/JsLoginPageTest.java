@@ -51,6 +51,7 @@ public class JsLoginPageTest {
 		
 
 //		System.setProperty("webdriver.chrome.driver", "/Users/joyshen/eclipse-workspace/Selenium/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/mac-mini-slave/jenkins-k8s/workspace/istaging_editor_website_autotesting/istaging_editor_website_autotesting/chromedriver");
 		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
 		test.log(LogStatus.INFO, "Browser started...");

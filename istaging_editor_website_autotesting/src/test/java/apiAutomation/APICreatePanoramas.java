@@ -6,16 +6,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import org.json.JSONException;
-
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonParser;
 
 import net.sf.json.JSONArray;
+import net.sf.json.JSONException;
 import net.sf.json.JSONObject;
 
 public class APICreatePanoramas {

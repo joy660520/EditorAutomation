@@ -6,20 +6,13 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.json.JSONException;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 
-import testSuitesLoginPage.JsLoginPageTest;
+import net.sf.json.JSONException;
 
 public class APIGetPanoInfo {
 	

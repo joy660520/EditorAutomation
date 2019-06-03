@@ -54,7 +54,7 @@ public class DeleteLivetour extends JsLoginPageTest {
 			System.out.println(e);
 		}
 		Assert.assertTrue(primaryBtn != null);
-		getScreenshots();
+		
 		test.log(LogStatus.PASS, "Verified delete copy livetour successfully");
 
 		Thread.sleep(3000);

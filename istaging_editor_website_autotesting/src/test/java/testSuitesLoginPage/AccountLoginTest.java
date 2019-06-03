@@ -35,7 +35,7 @@ public class AccountLoginTest extends LoginPageTest {
 			System.out.println(e);
 		}
 		Assert.assertTrue(primaryBtn != null);
-		getScreenshots();
+//		getScreenshots();
 		test.log(LogStatus.PASS, "Verified login successfully");
 
 		Thread.sleep(3000);

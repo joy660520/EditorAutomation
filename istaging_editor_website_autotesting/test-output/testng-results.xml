@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12426" started-at="2019-06-03T07:34:44Z" finished-at="2019-06-03T07:34:57Z">
+  <suite name="Extent TestSuite" duration-ms="136379" started-at="2019-06-03T14:09:42Z" finished-at="2019-06-03T14:11:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12426" started-at="2019-06-03T07:34:44Z" finished-at="2019-06-03T07:34:57Z">
+    <test name="Login Test" duration-ms="11651" started-at="2019-06-03T14:09:42Z" finished-at="2019-06-03T14:09:53Z">
       <class name="testSuitesLoginPage.AccountLoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuitesLoginPage.AccountLoginTest@55740540]" name="setUp" is-config="true" duration-ms="3553" started-at="2019-06-03T07:34:44Z" finished-at="2019-06-03T07:34:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuitesLoginPage.AccountLoginTest@55740540]" name="setUp" is-config="true" duration-ms="4081" started-at="2019-06-03T14:09:42Z" finished-at="2019-06-03T14:09:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="accountLoginTest()[pri:0, instance:testSuitesLoginPage.AccountLoginTest@55740540]" name="accountLoginTest" duration-ms="8498" started-at="2019-06-03T07:34:48Z" finished-at="2019-06-03T07:34:56Z">
+        <test-method status="PASS" signature="accountLoginTest()[pri:0, instance:testSuitesLoginPage.AccountLoginTest@55740540]" name="accountLoginTest" duration-ms="7262" started-at="2019-06-03T14:09:46Z" finished-at="2019-06-03T14:09:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountLoginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuitesLoginPage.AccountLoginTest@55740540]" name="tearDown" is-config="true" duration-ms="357" started-at="2019-06-03T07:34:56Z" finished-at="2019-06-03T07:34:57Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuitesLoginPage.AccountLoginTest@55740540]" name="tearDown" is-config="true" duration-ms="295" started-at="2019-06-03T14:09:53Z" finished-at="2019-06-03T14:09:53Z">
           <params>
             <param index="0">
               <value>
@@ -27,6 +27,106 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testSuitesLoginPage.AccountLoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login Test -->
+    <test name="Logout Test" duration-ms="17712" started-at="2019-06-03T14:09:53Z" finished-at="2019-06-03T14:10:11Z">
+      <class name="testSuitesLoginPage.AccountLogoutTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuitesLoginPage.AccountLogoutTest@1fb700ee]" name="setUp" is-config="true" duration-ms="2964" started-at="2019-06-03T14:09:53Z" finished-at="2019-06-03T14:09:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="accountLoginTest()[pri:0, instance:testSuitesLoginPage.AccountLogoutTest@1fb700ee]" name="accountLoginTest" duration-ms="14591" started-at="2019-06-03T14:09:56Z" finished-at="2019-06-03T14:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountLoginTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuitesLoginPage.AccountLogoutTest@1fb700ee]" name="tearDown" is-config="true" duration-ms="155" started-at="2019-06-03T14:10:11Z" finished-at="2019-06-03T14:10:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=accountLoginTest status=SUCCESS method=AccountLogoutTest.accountLoginTest()[pri:0, instance:testSuitesLoginPage.AccountLogoutTest@1fb700ee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testSuitesLoginPage.AccountLogoutTest -->
+    </test> <!-- Logout Test -->
+    <test name="Create New Livetour Test" duration-ms="26567" started-at="2019-06-03T14:10:11Z" finished-at="2019-06-03T14:10:38Z">
+      <class name="testSuiteEditorBuildingListPage.CreateNewLivetour">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuiteEditorBuildingListPage.CreateNewLivetour@6f27a732]" name="setUp" is-config="true" duration-ms="3025" started-at="2019-06-03T14:10:11Z" finished-at="2019-06-03T14:10:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createNewLivetour()[pri:0, instance:testSuiteEditorBuildingListPage.CreateNewLivetour@6f27a732]" name="createNewLivetour" duration-ms="23375" started-at="2019-06-03T14:10:14Z" finished-at="2019-06-03T14:10:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewLivetour -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuiteEditorBuildingListPage.CreateNewLivetour@6f27a732]" name="tearDown" is-config="true" duration-ms="164" started-at="2019-06-03T14:10:38Z" finished-at="2019-06-03T14:10:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewLivetour status=SUCCESS method=CreateNewLivetour.createNewLivetour()[pri:0, instance:testSuiteEditorBuildingListPage.CreateNewLivetour@6f27a732] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testSuiteEditorBuildingListPage.CreateNewLivetour -->
+    </test> <!-- Create New Livetour Test -->
+    <test name="Delete Livetour Test" duration-ms="29626" started-at="2019-06-03T14:10:38Z" finished-at="2019-06-03T14:11:07Z">
+      <class name="testSuiteEditorBuildingListPage.DeleteLivetour">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuiteEditorBuildingListPage.DeleteLivetour@44a7bfbc]" name="setUp" is-config="true" duration-ms="2843" started-at="2019-06-03T14:10:38Z" finished-at="2019-06-03T14:10:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteLivetour()[pri:0, instance:testSuiteEditorBuildingListPage.DeleteLivetour@44a7bfbc]" name="deleteLivetour" duration-ms="26628" started-at="2019-06-03T14:10:41Z" finished-at="2019-06-03T14:11:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLivetour -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuiteEditorBuildingListPage.DeleteLivetour@44a7bfbc]" name="tearDown" is-config="true" duration-ms="150" started-at="2019-06-03T14:11:07Z" finished-at="2019-06-03T14:11:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteLivetour status=SUCCESS method=DeleteLivetour.deleteLivetour()[pri:0, instance:testSuiteEditorBuildingListPage.DeleteLivetour@44a7bfbc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testSuiteEditorBuildingListPage.DeleteLivetour -->
+    </test> <!-- Delete Livetour Test -->
+    <test name="Check CubemapReady Test" duration-ms="24151" started-at="2019-06-03T14:11:07Z" finished-at="2019-06-03T14:11:31Z">
+      <class name="apiAutomation.APIGetPanoInfo">
+        <test-method status="PASS" signature="checkCubemapReady()[pri:0, instance:apiAutomation.APIGetPanoInfo@366647c2]" name="checkCubemapReady" duration-ms="24145" started-at="2019-06-03T14:11:07Z" finished-at="2019-06-03T14:11:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCubemapReady -->
+      </class> <!-- apiAutomation.APIGetPanoInfo -->
+    </test> <!-- Check CubemapReady Test -->
+    <test name="Search Building by Name Test" duration-ms="26635" started-at="2019-06-03T14:11:32Z" finished-at="2019-06-03T14:11:58Z">
+      <class name="testSuiteEditorBuildingListPage.SearchBuilding">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuiteEditorBuildingListPage.SearchBuilding@6a370f4]" name="setUp" is-config="true" duration-ms="2757" started-at="2019-06-03T14:11:32Z" finished-at="2019-06-03T14:11:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchLivetour()[pri:0, instance:testSuiteEditorBuildingListPage.SearchBuilding@6a370f4]" name="searchLivetour" duration-ms="23729" started-at="2019-06-03T14:11:34Z" finished-at="2019-06-03T14:11:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchLivetour -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuiteEditorBuildingListPage.SearchBuilding@6a370f4]" name="tearDown" is-config="true" duration-ms="146" started-at="2019-06-03T14:11:58Z" finished-at="2019-06-03T14:11:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchLivetour status=SUCCESS method=SearchBuilding.searchLivetour()[pri:0, instance:testSuiteEditorBuildingListPage.SearchBuilding@6a370f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testSuiteEditorBuildingListPage.SearchBuilding -->
+    </test> <!-- Search Building by Name Test -->
+  </suite> <!-- Extent TestSuite -->
 </testng-results>

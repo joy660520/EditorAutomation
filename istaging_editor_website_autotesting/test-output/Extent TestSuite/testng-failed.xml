@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Extent TestSuite]" parallel="tests">
-  <test thread-count="5" name="Delete Livetour Test(failed)" parallel="tests">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Extent TestSuite]" parallel="tests">
+  <test thread-count="1" name="Create New Livetour Test(failed)" parallel="tests">
     <classes>
-      <class name="testSuiteEditorBuildingListPage.DeleteLivetour">
+      <class name="testSuiteEditorBuildingListPage.CreateNewLivetour">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="copyLivetour"/>
+          <include name="tearDown"/>
+          <include name="createNewLivetour"/>
         </methods>
-      </class> <!-- testSuiteEditorBuildingListPage.DeleteLivetour -->
+      </class> <!-- testSuiteEditorBuildingListPage.CreateNewLivetour -->
     </classes>
-  </test> <!-- Delete Livetour Test(failed) -->
+  </test> <!-- Create New Livetour Test(failed) -->
 </suite> <!-- Failed suite [Extent TestSuite] -->

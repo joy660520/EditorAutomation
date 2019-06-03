@@ -43,7 +43,7 @@ public class AccountLogoutTest extends LoginPageTest{
 			System.out.println(e);
 		}
 		Assert.assertTrue(primaryBtn != null);
-		getScreenshots();
+		
 		test.log(LogStatus.PASS, "Verified logout successfully");
 
 		Thread.sleep(3000);

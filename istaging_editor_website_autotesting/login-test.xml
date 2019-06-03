@@ -6,6 +6,11 @@
 			<class name="testSuitesLoginPage.AccountLoginTest"></class>
 		</classes>
 	</test>
+	<test name="Logout Test">
+		<classes>
+			<class name="testSuitesLoginPage.AccountLogoutTest"></class>
+		</classes>
+	</test>
 	<test name="Create New Livetour Test">
 		<classes>
 			<class name="testSuiteEditorBuildingListPage.CreateNewLivetour"></class>
@@ -14,6 +19,16 @@
 	<test name="Delete Livetour Test">
 		<classes>
 			<class name="testSuiteEditorBuildingListPage.DeleteLivetour"></class>
+		</classes>
+	</test>
+	<test name="Check CubemapReady Test">
+		<classes>
+			<class name="apiAutomation.APIGetPanoInfo"></class>
+		</classes>
+	</test>
+	<test name="Search Building by Name Test">
+		<classes>
+			<class name="testSuiteEditorBuildingListPage.SearchBuilding"></class>
 		</classes>
 	</test>
 

@@ -62,7 +62,7 @@ public class CreateAccountTest extends LoginPageTest {
 			System.out.println(e);
 		}
 		Assert.assertTrue(primaryBtn != null);
-		getScreenshots();
+		
 		test.log(LogStatus.PASS, "Verified register successfully");
 
 		Thread.sleep(3000);

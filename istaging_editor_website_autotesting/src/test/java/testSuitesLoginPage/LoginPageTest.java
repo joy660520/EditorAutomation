@@ -59,9 +59,12 @@ public class LoginPageTest {
 	public void tearDown(ITestResult testResult) throws Exception {
 		this.finalTestResult = testResult;
 		if (this.finalTestResult.getStatus() == ITestResult.FAILURE) {
-			String path = (String) Screenshots.takeScreenshot(driver, finalTestResult.getName());
-			String imagePath = test.addScreenCapture(path);
-			test.log(LogStatus.FAIL, "Verified login failed", imagePath);
+			getScreenshots();
+			
+			//加在extentReport裡面的方法
+//			String path = (String)Screenshots.takeScreenshot(driver, finalTestResult.getName());
+//			String imagePath = test.addScreenCapture(path);
+//			test.log(LogStatus.FAIL, "Verified login failed", imagePath);
 		}
 
 		driver.quit();
@@ -90,10 +93,12 @@ public class LoginPageTest {
 		return s.toString();
 	}
 
-	public void getScreenshots() throws Exception {
+	public void getScreenshots() throws Exception { 
 		String fileName = getRandomString() + ".png";
-		String directory = "/Users/joyshen/Documents/autotesting screenshot";
+		File classpathRoot = new File(System.getProperty("user.dir"));
+	    File appDir = new File(classpathRoot, "screenshot");
+//		String directory = "/Users/joyshen/Documents/autotesting screenshot";
 		File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(sourceFile, new File(directory, fileName));
+		FileHandler.copy(sourceFile, new File(appDir, fileName));
 	}
 }

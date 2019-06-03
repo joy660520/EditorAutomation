@@ -42,7 +42,7 @@ public class LoginPageTest {
 		report=ExtentFactory.getInstance();
 		test = report.startTest("Verify if login successfully");
 
-		System.setProperty("webdriver.chrome.driver", "/Users/joyshen/eclipse-workspace/Selenium/chromedriver");
+//		System.setProperty("webdriver.chrome.driver", "/Users/joyshen/eclipse-workspace/Selenium/chromedriver");
 		driver = new ChromeDriver();
 		test.log(LogStatus.INFO, "Browser started...");
 

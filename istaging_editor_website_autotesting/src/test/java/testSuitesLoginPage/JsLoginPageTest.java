@@ -50,7 +50,7 @@ public class JsLoginPageTest {
 		test = report.startTest("Verify if create new livetour successfully");
 		
 
-		System.setProperty("webdriver.chrome.driver", "/Users/joyshen/eclipse-workspace/Selenium/chromedriver");
+//		System.setProperty("webdriver.chrome.driver", "/Users/joyshen/eclipse-workspace/Selenium/chromedriver");
 		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
 		test.log(LogStatus.INFO, "Browser started...");

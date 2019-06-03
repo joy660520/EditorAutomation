@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28999" started-at="2019-06-02T15:18:23Z" finished-at="2019-06-02T15:18:52Z">
+  <suite name="Default suite" duration-ms="12426" started-at="2019-06-03T07:34:44Z" finished-at="2019-06-03T07:34:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28999" started-at="2019-06-02T15:18:23Z" finished-at="2019-06-02T15:18:52Z">
-      <class name="testSuiteEditorBuildingListPage.SearchBuilding">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuiteEditorBuildingListPage.SearchBuilding@55740540]" name="setUp" is-config="true" duration-ms="3806" started-at="2019-06-02T15:18:23Z" finished-at="2019-06-02T15:18:26Z">
+    <test name="Default test" duration-ms="12426" started-at="2019-06-03T07:34:44Z" finished-at="2019-06-03T07:34:57Z">
+      <class name="testSuitesLoginPage.AccountLoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuitesLoginPage.AccountLoginTest@55740540]" name="setUp" is-config="true" duration-ms="3553" started-at="2019-06-03T07:34:44Z" finished-at="2019-06-03T07:34:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchLivetour()[pri:0, instance:testSuiteEditorBuildingListPage.SearchBuilding@55740540]" name="searchLivetour" duration-ms="24878" started-at="2019-06-02T15:18:26Z" finished-at="2019-06-02T15:18:51Z">
+        <test-method status="PASS" signature="accountLoginTest()[pri:0, instance:testSuitesLoginPage.AccountLoginTest@55740540]" name="accountLoginTest" duration-ms="8498" started-at="2019-06-03T07:34:48Z" finished-at="2019-06-03T07:34:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchLivetour -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuiteEditorBuildingListPage.SearchBuilding@55740540]" name="tearDown" is-config="true" duration-ms="300" started-at="2019-06-02T15:18:51Z" finished-at="2019-06-02T15:18:52Z">
+        </test-method> <!-- accountLoginTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuitesLoginPage.AccountLoginTest@55740540]" name="tearDown" is-config="true" duration-ms="357" started-at="2019-06-03T07:34:56Z" finished-at="2019-06-03T07:34:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchLivetour status=SUCCESS method=SearchBuilding.searchLivetour()[pri:0, instance:testSuiteEditorBuildingListPage.SearchBuilding@55740540] output={null}]]]>
+                <![CDATA[[TestResult name=accountLoginTest status=SUCCESS method=AccountLoginTest.accountLoginTest()[pri:0, instance:testSuitesLoginPage.AccountLoginTest@55740540] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testSuiteEditorBuildingListPage.SearchBuilding -->
+      </class> <!-- testSuitesLoginPage.AccountLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

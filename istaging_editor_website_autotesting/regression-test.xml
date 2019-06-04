@@ -1,7 +1,7 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Extent TestSuite" parallel="tests" thread-count="1">
-	<test name="Login Test">
+	<test name="Regression Test">
 		<classes>
 			<class name="testSuitesLoginPage.AccountLoginTest"></class>
 		</classes>

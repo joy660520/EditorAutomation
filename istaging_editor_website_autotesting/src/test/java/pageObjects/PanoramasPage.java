@@ -53,7 +53,7 @@ public class PanoramasPage {
         if(getHostname().equals("iMac.local")) {
         	for (int index = 1; index <= 10; index++) {
     			driver.findElement(By.id("Panoramas"))
-    					.sendKeys("/Users/mac-mini-slave/jenkins-k8s/workspace/istaging_editor_website_autotesting/istaging_editor_website_autotesting/panoramas" + index + ".jpg");
+    					.sendKeys("/Users/mac-mini-slave/jenkins-k8s/workspace/istaging_editor_website_autotesting/istaging_editor_website_autotesting/automation" + index + ".jpg");
     			}
         }else if(getHostname().equals("joy-MacBook-Pro.local")) {
         	for (int index = 1; index <= 10; index++) {

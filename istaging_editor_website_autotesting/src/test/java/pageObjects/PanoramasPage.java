@@ -1,6 +1,8 @@
 package pageObjects;
 
 import java.io.File;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -32,17 +34,34 @@ public class PanoramasPage {
 		element = addPanoramas(driver);
 		element.click();
 	}
+	
+	private static String getHostname() {
+        InetAddress ip;
+        String hostname = "";
+        try {
+            ip = InetAddress.getLocalHost();
+            hostname = ip.getHostName();
+//            System.out.println("Your current IP address : " + ip);
+//            System.out.println("Your current Hostname : " + hostname);
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+          }
+        return hostname;
+    }
 
 	public static void importPhotos(WebDriver driver) {
-//		File classpathRoot = new File(System.getProperty("user.dir"));
-//	    File appDir = new File(classpathRoot, "panoramas");
-//	    File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//		FileHandler.copy(sourceFile, new File(appDir, fileName));
-		
-		for (int index = 1; index <= 10; index++) {
-			driver.findElement(By.id("Panoramas"))
-					.sendKeys("/Users/joyshen/Documents/automation/automation" + index + ".jpg");
-		}
+        if(getHostname().equals("iMac.local")) {
+        	for (int index = 1; index <= 10; index++) {
+    			driver.findElement(By.id("Panoramas"))
+    					.sendKeys("/Users/mac-mini-slave/jenkins-k8s/workspace/istaging_editor_website_autotesting/istaging_editor_website_autotesting/panoramas" + index + ".jpg");
+    			}
+        }else if(getHostname().equals("joy-MacBook-Pro.local")) {
+        	for (int index = 1; index <= 10; index++) {
+    			driver.findElement(By.id("Panoramas"))
+    					.sendKeys("/Users/joyshen/Documents/automation/automation" + index + ".jpg");
+    			}
+        }
+
 	}
 
 	public static void submitPhotos(WebDriver driver) {

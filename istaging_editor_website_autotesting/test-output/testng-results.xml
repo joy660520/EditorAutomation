@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="73436" started-at="2019-06-03T15:16:16Z" finished-at="2019-06-03T15:17:29Z">
+  <suite name="Default suite" duration-ms="47220" started-at="2019-06-04T02:10:25Z" finished-at="2019-06-04T02:11:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="73436" started-at="2019-06-03T15:16:16Z" finished-at="2019-06-03T15:17:29Z">
+    <test name="Default test" duration-ms="47220" started-at="2019-06-04T02:10:25Z" finished-at="2019-06-04T02:11:12Z">
       <class name="testSuiteEditorBuildingDetailPage.ImportPhotos">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuiteEditorBuildingDetailPage.ImportPhotos@55740540]" name="setUp" is-config="true" duration-ms="3655" started-at="2019-06-03T15:16:16Z" finished-at="2019-06-03T15:16:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuiteEditorBuildingDetailPage.ImportPhotos@55740540]" name="setUp" is-config="true" duration-ms="3803" started-at="2019-06-04T02:10:25Z" finished-at="2019-06-04T02:10:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="importPhotos()[pri:0, instance:testSuiteEditorBuildingDetailPage.ImportPhotos@55740540]" name="importPhotos" duration-ms="69442" started-at="2019-06-03T15:16:20Z" finished-at="2019-06-03T15:17:29Z">
+        <test-method status="PASS" signature="importPhotos()[pri:0, instance:testSuiteEditorBuildingDetailPage.ImportPhotos@55740540]" name="importPhotos" duration-ms="42972" started-at="2019-06-04T02:10:29Z" finished-at="2019-06-04T02:11:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- importPhotos -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuiteEditorBuildingDetailPage.ImportPhotos@55740540]" name="tearDown" is-config="true" duration-ms="324" started-at="2019-06-03T15:17:29Z" finished-at="2019-06-03T15:17:29Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuiteEditorBuildingDetailPage.ImportPhotos@55740540]" name="tearDown" is-config="true" duration-ms="427" started-at="2019-06-04T02:11:12Z" finished-at="2019-06-04T02:11:12Z">
           <params>
             <param index="0">
               <value>

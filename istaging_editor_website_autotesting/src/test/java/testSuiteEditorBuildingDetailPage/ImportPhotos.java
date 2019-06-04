@@ -24,7 +24,7 @@ public class ImportPhotos extends JsLoginPageTest {
 	@Test
 	public void importPhotos() throws Exception {
 
-		LoginPage.FillEmailTextBox(driver, "joy@staging.com.tw");
+		LoginPage.FillEmailTextBox(driver, "joyautomation@staging.com.tw");
 		test.log(LogStatus.INFO, "Enter User Name...");
 
 		LoginPage.FillPasswordTextBox(driver, "000000");

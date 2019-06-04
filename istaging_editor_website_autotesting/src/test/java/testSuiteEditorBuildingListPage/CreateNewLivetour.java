@@ -59,7 +59,7 @@ public class CreateNewLivetour extends LoginPageTest {
 			System.out.println(e);
 		}
 		Assert.assertTrue(primaryBtn != null);
-		getScreenshots();
+		
 		test.log(LogStatus.PASS, "Verified create new livetour successfully");
 
 		Thread.sleep(3000);

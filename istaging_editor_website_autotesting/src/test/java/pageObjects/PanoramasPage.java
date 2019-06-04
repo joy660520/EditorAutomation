@@ -3,8 +3,11 @@ package pageObjects;
 import java.io.File;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.io.FileHandler;
 
 public class PanoramasPage {
 	WebDriver driver;
@@ -31,13 +34,14 @@ public class PanoramasPage {
 	}
 
 	public static void importPhotos(WebDriver driver) {
-		File classpathRoot = new File(System.getProperty("user.dir"));
-	    File appDir = new File(classpathRoot, "panoramas");
-	    String index = null;
-		File panos=new File(appDir,"pano"+index+".jpg");
-	    
-		for (int index2 = 1; index2 <= 10; index2++) {
-			driver.findElement(By.id("Panoramas")).submit();
+//		File classpathRoot = new File(System.getProperty("user.dir"));
+//	    File appDir = new File(classpathRoot, "panoramas");
+//	    File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//		FileHandler.copy(sourceFile, new File(appDir, fileName));
+		
+		for (int index = 1; index <= 10; index++) {
+			driver.findElement(By.id("Panoramas"))
+					.sendKeys("/Users/joyshen/Documents/automation/automation" + index + ".jpg");
 		}
 	}
 

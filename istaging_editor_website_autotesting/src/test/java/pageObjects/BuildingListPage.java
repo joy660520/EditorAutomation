@@ -105,7 +105,7 @@ public class BuildingListPage {
 
 	public static WebElement selectBuilding(WebDriver driver) {
 		element = driver
-				.findElement(By.xpath("//a[@href='/buildings/84c0daf3-3f53-4018-9dcf-cd1764524c18/basic-info']"));
+				.findElement(By.xpath("//a[@href='/buildings/21558c19-4527-4403-aa5c-4f5d5583595e/basic-info']"));
 		return element;
 	}
 

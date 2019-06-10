@@ -67,7 +67,7 @@ public class AddCustomIconTest extends JsLoginPageTest {
 		PanoramasPage.importPhotosForAddCustomIcons(driver);
 		PanoramasPage.submitPhotos(driver);
 		test.log(LogStatus.INFO, "Import Panoramas...");
-		Thread.sleep(30000);
+		Thread.sleep(5000);
 
 		PanoramasPage.selectMarkerEditorTab(driver);
 		test.log(LogStatus.INFO, "Select Marker-Editor Tab...");

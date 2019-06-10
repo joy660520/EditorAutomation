@@ -28,7 +28,7 @@
 	</test>
 	<test name="Import multi-panos Test">
 		<classes>
-			<class name="testSuiteEditorBuildingDetailPage.ImportPhotos"></class>
+			<class name="testSuiteEditorBuildingDetailPage.ImportPhotosTest"></class>
 		</classes>
 	</test>
 	<test name="Search Building by Name Test">

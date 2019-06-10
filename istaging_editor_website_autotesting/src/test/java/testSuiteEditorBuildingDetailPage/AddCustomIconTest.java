@@ -64,7 +64,7 @@ public class AddCustomIconTest extends JsLoginPageTest {
 		test.log(LogStatus.INFO, "Click Add Panoramas Btn...");
 		Thread.sleep(3000);
 		
-		PanoramasPage.importPhotos(driver);
+		PanoramasPage.importPhotosForAddCustomIcons(driver);
 		PanoramasPage.submitPhotos(driver);
 		test.log(LogStatus.INFO, "Import Panoramas...");
 		Thread.sleep(30000);

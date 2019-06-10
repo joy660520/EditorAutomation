@@ -31,7 +31,7 @@ public class MarkerEditorPage {
         if(getHostname().equals("iMac.local")) {
         	for (int index = 1; index <= 10; index++) {
     			driver.findElement(By.id("MarkerEditorEditIcon"))
-    					.sendKeys("/Users/mac-mini-slave/jenkins-k8s/workspace/istaging_editor_website_autotesting/istaging_editor_website_autotesting/icon/icon" + index + ".jpg");
+    					.sendKeys("/Users/mac-mini-slave/jenkins-k8s/workspace/istaging_editor_website_autotesting/istaging_editor_website_autotesting/icon/icon" + index + ".png");
     			}
         }else if(getHostname().equals("joy-MacBook-Pro.local")) {
         	for (int index = 1; index <= 10; index++) {

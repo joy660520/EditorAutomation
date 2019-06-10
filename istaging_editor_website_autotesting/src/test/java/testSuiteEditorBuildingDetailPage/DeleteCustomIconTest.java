@@ -24,7 +24,7 @@ import utilities.GenericMethods;
 public class DeleteCustomIconTest extends JsLoginPageTest {
 
 	@Test
-	public void deleteCustomIcon() throws Exception {
+	public void deleteCustomIcons() throws Exception {
 		GenericMethods gm = new GenericMethods(driver);
 
 		LoginPage.FillEmailTextBox(driver, "joyautomation@staging.com.tw");

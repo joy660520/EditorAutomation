@@ -103,14 +103,25 @@ public class BuildingListPage {
 		action.moveToElement(copyLivetour).click().perform();
 	}
 
-	public static WebElement selectBuilding(WebDriver driver) {
+	public static WebElement buildingForImportPhotos(WebDriver driver) {//for import photos
 		element = driver
 				.findElement(By.xpath("//a[@href='/buildings/21558c19-4527-4403-aa5c-4f5d5583595e/basic-info']"));
 		return element;
 	}
 
-	public static void confirmSelectBuilding(WebDriver driver) {
-		element = selectBuilding(driver);
+	public static void selectBuildingForImportPhotos(WebDriver driver) {
+		element = buildingForImportPhotos(driver);
+		element.click();
+	}
+	
+	public static WebElement buildingForDeleteCustomIcon(WebDriver driver) {//for delete custom icon
+		element = driver
+				.findElement(By.xpath("//a[@href='/buildings/65c59047-9e6e-4966-92b2-06fbd81bccf5/basic-info']"));
+		return element;
+	}
+
+	public static void selectBuildingForDeleteCustomIcon(WebDriver driver) {
+		element = buildingForDeleteCustomIcon(driver);
 		element.click();
 	}
 

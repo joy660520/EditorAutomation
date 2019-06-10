@@ -36,5 +36,15 @@
 			<class name="testSuiteEditorBuildingListPage.SearchBuilding"></class>
 		</classes>
 	</test>
+	<test name="Add Custom Icons Test">
+		<classes>
+			<class name="testSuiteEditorBuildingDetailPage.AddCustomIconTest"></class>
+		</classes>
+	</test>
+	<test name="Delete Custom Icons Test">
+		<classes>
+			<class name="testSuiteEditorBuildingDetailPage.DeleteCustomIconTest"></class>
+		</classes>
+	</test>
 
 </suite>

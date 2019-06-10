@@ -18,7 +18,7 @@ import testSuitesLoginPage.JsLoginPageTest;
 public class DeleteLivetour extends JsLoginPageTest {
 	
 	@Test
-	public void deleteLivetour() throws Exception { //還沒改
+	public void deleteLivetour() throws Exception { 
 
 		LoginPage.FillEmailTextBox(driver, "joyautomation@staging.com.tw");
 		test.log(LogStatus.INFO, "Enter User Name...");

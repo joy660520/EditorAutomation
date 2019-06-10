@@ -46,7 +46,7 @@ public class JsLoginPageTest {
 	public void setUp() throws Exception {
 		baseUrl = "https://vrportal-test.istaging.com/login";
 		report=ExtentFactory.getInstance();
-		test = report.startTest("Verify if create new livetour successfully");
+		test = report.startTest("Regression Test");
 		
 
 		

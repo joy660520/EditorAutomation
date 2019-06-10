@@ -40,7 +40,7 @@ public class LoginPageTest {
 	public void setUp() throws Exception {
 		baseUrl = "https://vrportal-test.istaging.com/login";
 		report=ExtentFactory.getInstance();
-		test = report.startTest("Verify if login successfully");
+		test = report.startTest("Regression Test");
 
 		
 		driver = new ChromeDriver();

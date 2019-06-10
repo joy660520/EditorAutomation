@@ -19,7 +19,7 @@ import pageObjects.LoginPage;
 import pageObjects.PanoramasPage;
 import testSuitesLoginPage.JsLoginPageTest;
 
-public class ImportPhotos extends JsLoginPageTest {
+public class ImportPhotosTest extends JsLoginPageTest {
 	
 	@Test
 	public void importPhotos() throws Exception {
@@ -41,7 +41,7 @@ public class ImportPhotos extends JsLoginPageTest {
 		js.executeScript("window.location='https://vreditor-test.istaging.com/buildings';");
 		Thread.sleep(5000);
 		
-		BuildingListPage.confirmSelectBuilding(driver);
+		BuildingListPage.selectBuildingForImportPhotos(driver);;
 		test.log(LogStatus.INFO, "Enter Building Detail Page...");
 		Thread.sleep(3000);
 		
@@ -69,7 +69,6 @@ public class ImportPhotos extends JsLoginPageTest {
 			System.out.println(e);
 		}
 		Assert.assertTrue(primaryBtn != null);
-		getScreenshots();
 		test.log(LogStatus.PASS, "Verified import livetour successfully");
 
 		Thread.sleep(3000);

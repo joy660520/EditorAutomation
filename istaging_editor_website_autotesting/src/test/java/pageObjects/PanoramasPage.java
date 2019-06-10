@@ -24,6 +24,16 @@ public class PanoramasPage {
 		element = panoramas(driver);
 		element.click();
 	}
+	
+	public static WebElement markerEditor(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[3]/div[1]/ul/li[3]/a"));
+		return element;
+	}
+
+	public static void selectMarkerEditorTab(WebDriver driver) {
+		element = markerEditor(driver);
+		element.click();
+	}
 
 	public static WebElement addPanoramas(WebDriver driver) {
 		element = driver.findElement(By.xpath("//div[@class='add-panoramas']/button"));
@@ -34,6 +44,7 @@ public class PanoramasPage {
 		element = addPanoramas(driver);
 		element.click();
 	}
+	
 	
 	private static String getHostname() {
         InetAddress ip;
@@ -56,7 +67,7 @@ public class PanoramasPage {
     					.sendKeys("/Users/mac-mini-slave/jenkins-k8s/workspace/istaging_editor_website_autotesting/istaging_editor_website_autotesting/panoramas/automation" + index + ".jpg");
     			}
         }else if(getHostname().equals("joy-MacBook-Pro.local")) {
-        	for (int index = 1; index <= 10; index++) {
+        	for (int index = 1; index <= 1; index++) {
     			driver.findElement(By.id("Panoramas"))
     					.sendKeys("/Users/joyshen/Documents/automation/automation" + index + ".jpg");
     			}

@@ -1,10 +1,13 @@
 package utilities;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
-public class GenericMethods {//查找單一元素
+public class GenericMethods {// 查找單一元素
 	WebDriver driver;
 
 	public GenericMethods(WebDriver driver) {
@@ -13,20 +16,108 @@ public class GenericMethods {//查找單一元素
 
 	public WebElement getElement(String locator, String type) { // locator:定位路徑 type:定位方式
 		type = type.toLowerCase();
-		if(type.equals("id")) {
-			System.out.println("find element by id"+locator);
+		if (type.equals("id")) {
+			System.out.println("find element by id" + locator);
 			return this.driver.findElement(By.id(locator));
-		}else if(type.equals("xpath")) {
-			System.out.println("find element by xpath"+locator);
+		} else if (type.equals("xpath")) {
+			System.out.println("find element by xpath" + locator);
 			return this.driver.findElement(By.xpath(locator));
-		}else if(type.equals("class")) {
-			System.out.println("find element by class"+locator);
+		} else if (type.equals("name")) {
+			System.out.println("find element by name" + locator);
+			return this.driver.findElement(By.name(locator));
+		} else if (type.equals("css")) {
+			System.out.println("find element by css" + locator);
+			return this.driver.findElement(By.cssSelector(locator));
+		} else if (type.equals("classname")) {
+			System.out.println("find element by classname" + locator);
 			return this.driver.findElement(By.className(locator));
-		}
-		else {
+		} else if (type.equals("tagname")) {
+			System.out.println("find element by tagname" + locator);
+			return this.driver.findElement(By.tagName(locator));
+		} else if (type.equals("linktext")) {
+			System.out.println("find element by linktext" + locator);
+			return this.driver.findElement(By.linkText(locator));
+		} else if (type.equals("partiallinktext")) {
+			System.out.println("find element by partiallinktext" + locator);
+			return this.driver.findElement(By.partialLinkText(locator));
+		} else {
 			System.out.println("invalid locator");
+			return null;
 		}
 
-		return null;
+	}
+
+	public List<WebElement> getElements(String locator, String type) { // locator:定位路徑 type:定位方式
+		type = type.toLowerCase();
+		if (type.equals("id")) {
+			System.out.println("find element by id" + locator);
+			return this.driver.findElements(By.id(locator));
+		} else if (type.equals("xpath")) {
+			System.out.println("find element by xpath" + locator);
+			return this.driver.findElements(By.xpath(locator));
+		} else if (type.equals("name")) {
+			System.out.println("find element by name" + locator);
+			return this.driver.findElements(By.name(locator));
+		} else if (type.equals("css")) {
+			System.out.println("find element by css" + locator);
+			return this.driver.findElements(By.cssSelector(locator));
+		} else if (type.equals("classname")) {
+			System.out.println("find element by classname" + locator);
+			return this.driver.findElements(By.className(locator));
+		} else if (type.equals("tagname")) {
+			System.out.println("find element by tagname" + locator);
+			return this.driver.findElements(By.tagName(locator));
+		} else if (type.equals("linktext")) {
+			System.out.println("find element by linktext" + locator);
+			return this.driver.findElements(By.linkText(locator));
+		} else if (type.equals("partiallinktext")) {
+			System.out.println("find element by partiallinktext" + locator);
+			return this.driver.findElements(By.partialLinkText(locator));
+		} else {
+			System.out.println("invalid locator");
+			return null;
+		}
+
+	}
+
+	public boolean isMarkerElementPresent(String locator, String type) {
+		List<WebElement> elementList = getElements(locator, type);
+		int size = elementList.size();
+		if (size == 16) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public static void deleteCustomIcon(WebDriver driver) throws Exception {
+		Actions action = new Actions(driver);
+		List<WebElement> elementList = driver
+				.findElements(By.xpath("//img[contains(@class,'image form-photo-large')]"));
+		System.out.println(elementList);
+		int size = elementList.size();
+		if (size <= 10) {
+			for (int index = 1; index <= 10; index++) {
+				WebElement mouseHover = driver
+						.findElement(By.xpath("//img[contains(@class,'image form-photo-large')]"));
+				action.moveToElement(mouseHover).perform();
+				WebElement deleteIcon = driver
+						.findElement(By.xpath("//a[contains(@class,'file-remove file-remove-marker-icon')]"));
+				Thread.sleep(1000);
+				action.moveToElement(deleteIcon).click().perform();
+			}
+		}
+		
+	}
+
+
+	public boolean isCustomIconElementPresent(String locator, String type) {
+		List<WebElement> elementList = getElements(locator, type);
+		int size = elementList.size();
+		if (size == 6) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }

@@ -13,7 +13,6 @@ testSuitesLoginPage/JsLoginPageTest.class
 utilities/ExtentFactory.class
 log4jtutorial/LoggingConsole.class
 apiAutomation/APICreatePanoramas.class
-testSuiteEditorBuildingDetailPage/ImportPhotos.class
 testSuitesLoginPage/AccountLogoutTest.class
 testSuiteEditorBuildingListPage/CopyLivetour.class
 testSuiteEditorBuildingListPage/DeleteLivetour.class

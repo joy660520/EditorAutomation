@@ -24,7 +24,7 @@ import utilities.GenericMethods;
 public class AddCustomIconTest extends JsLoginPageTest {
 
 	@Test
-	public void importPhotos() throws Exception {
+	public void addCustomIcons() throws Exception {
 		GenericMethods gm = new GenericMethods(driver);
 
 		LoginPage.FillEmailTextBox(driver, "joyautomation@staging.com.tw");

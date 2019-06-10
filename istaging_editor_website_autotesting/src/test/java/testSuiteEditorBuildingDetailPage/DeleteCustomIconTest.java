@@ -43,6 +43,8 @@ public class DeleteCustomIconTest extends JsLoginPageTest {
 
 		js.executeScript("window.location='https://vreditor-test.istaging.com/buildings';");
 		Thread.sleep(5000);
+		
+		js.executeScript("window.scrollBy(0,2600);");
 
 		gm.getElement("//a[@href='/buildings/65c59047-9e6e-4966-92b2-06fbd81bccf5/basic-info']", "xpath").click();
 		test.log(LogStatus.INFO, "Select Building For Delete Custom Icon...");

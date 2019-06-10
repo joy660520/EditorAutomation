@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59185" started-at="2019-06-10T07:45:55Z" finished-at="2019-06-10T07:46:54Z">
+  <suite name="Default suite" duration-ms="62219" started-at="2019-06-10T09:28:38Z" finished-at="2019-06-10T09:29:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59185" started-at="2019-06-10T07:45:55Z" finished-at="2019-06-10T07:46:54Z">
+    <test name="Default test" duration-ms="62219" started-at="2019-06-10T09:28:38Z" finished-at="2019-06-10T09:29:40Z">
       <class name="testSuiteEditorBuildingDetailPage.DeleteCustomIconTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuiteEditorBuildingDetailPage.DeleteCustomIconTest@55740540]" name="setUp" is-config="true" duration-ms="4828" started-at="2019-06-10T07:45:55Z" finished-at="2019-06-10T07:46:00Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuiteEditorBuildingDetailPage.DeleteCustomIconTest@55740540]" name="setUp" is-config="true" duration-ms="5075" started-at="2019-06-10T09:28:38Z" finished-at="2019-06-10T09:28:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deleteCustomIcon()[pri:0, instance:testSuiteEditorBuildingDetailPage.DeleteCustomIconTest@55740540]" name="deleteCustomIcon" duration-ms="53912" started-at="2019-06-10T07:46:00Z" finished-at="2019-06-10T07:46:54Z">
+        <test-method status="PASS" signature="deleteCustomIcons()[pri:0, instance:testSuiteEditorBuildingDetailPage.DeleteCustomIconTest@55740540]" name="deleteCustomIcons" duration-ms="56828" started-at="2019-06-10T09:28:43Z" finished-at="2019-06-10T09:29:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteCustomIcon -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuiteEditorBuildingDetailPage.DeleteCustomIconTest@55740540]" name="tearDown" is-config="true" duration-ms="425" started-at="2019-06-10T07:46:54Z" finished-at="2019-06-10T07:46:54Z">
+        </test-method> <!-- deleteCustomIcons -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuiteEditorBuildingDetailPage.DeleteCustomIconTest@55740540]" name="tearDown" is-config="true" duration-ms="300" started-at="2019-06-10T09:29:40Z" finished-at="2019-06-10T09:29:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteCustomIcon status=SUCCESS method=DeleteCustomIconTest.deleteCustomIcon()[pri:0, instance:testSuiteEditorBuildingDetailPage.DeleteCustomIconTest@55740540] output={null}]]]>
+                <![CDATA[[TestResult name=deleteCustomIcons status=SUCCESS method=DeleteCustomIconTest.deleteCustomIcons()[pri:0, instance:testSuiteEditorBuildingDetailPage.DeleteCustomIconTest@55740540] output={null}]]]>
               </value>
             </param>
           </params>

@@ -45,19 +45,17 @@ public class JsLoginPageTest {
 	@BeforeClass
 	public void setUp() throws Exception {
 		baseUrl = "https://vrportal-test.istaging.com/login";
-		report=ExtentFactory.getInstance();
+		report = ExtentFactory.getInstance();
 		test = report.startTest("Regression Test");
-		
 
-		
 		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
 		test.log(LogStatus.INFO, "Browser started...");
 
 		pf = new BuildingListPage();
 
-		// driver.manage().window().maximize();
-		// test.log(LogStatus.INFO, "Browser Maximized...");
+//		driver.manage().window().maximize();
+//		test.log(LogStatus.INFO, "Browser Maximized...");
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		driver.get(baseUrl);
 		test.log(LogStatus.INFO, "Web Application Opened...");
@@ -68,11 +66,12 @@ public class JsLoginPageTest {
 		this.finalTestResult = testResult;
 		if (this.finalTestResult.getStatus() == ITestResult.FAILURE) {
 			getScreenshots();
-			
-			//加在extentReport裡面的方法
-//			String path = (String) Screenshots.takeScreenshot(driver, finalTestResult.getName());
-//			String imagePath = test.addScreenCapture(path);
-//			test.log(LogStatus.FAIL, "Verified login failed", imagePath);
+
+			// 加在extentReport裡面的方法
+			// String path = (String) Screenshots.takeScreenshot(driver,
+			// finalTestResult.getName());
+			// String imagePath = test.addScreenCapture(path);
+			// test.log(LogStatus.FAIL, "Verified login failed", imagePath);
 		}
 
 		driver.quit();
@@ -80,20 +79,21 @@ public class JsLoginPageTest {
 		report.flush();
 	}
 
-//	@AfterClass
-//	public void tearDown() throws Exception {
-//		// Thread.sleep(1000);
-//
-//		if (this.finalTestResult.getStatus() == ITestResult.FAILURE) {
-//			String path = (String) Screenshots.takeScreenshot(driver, finalTestResult.getName());
-//			String imagePath = test.addScreenCapture(path);
-//			test.log(LogStatus.FAIL, "Verified login failed", imagePath);
-//		}
-//
-//		driver.quit();
-//		report.endTest(test);
-//		report.flush();
-//	}
+	// @AfterClass
+	// public void tearDown() throws Exception {
+	// // Thread.sleep(1000);
+	//
+	// if (this.finalTestResult.getStatus() == ITestResult.FAILURE) {
+	// String path = (String) Screenshots.takeScreenshot(driver,
+	// finalTestResult.getName());
+	// String imagePath = test.addScreenCapture(path);
+	// test.log(LogStatus.FAIL, "Verified login failed", imagePath);
+	// }
+	//
+	// driver.quit();
+	// report.endTest(test);
+	// report.flush();
+	// }
 
 	public static String getRandomString() throws InterruptedException {
 		String s = UUID.randomUUID().toString();
@@ -103,8 +103,8 @@ public class JsLoginPageTest {
 	public void getScreenshots() throws Exception {
 		String fileName = getRandomString() + ".png";
 		File classpathRoot = new File(System.getProperty("user.dir"));
-	    File appDir = new File(classpathRoot, "screenshot");
-//		String directory = "/Users/joyshen/Documents/autotesting screenshot";
+		File appDir = new File(classpathRoot, "screenshot");
+		// String directory = "/Users/joyshen/Documents/autotesting screenshot";
 		File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(sourceFile, new File(appDir, fileName));
 	}

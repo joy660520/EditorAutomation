@@ -105,7 +105,7 @@ public class BuildingListPage {
 
 	public static WebElement buildingForImportPhotos(WebDriver driver) {//for import photos
 		element = driver
-				.findElement(By.xpath("//a[@href='/buildings/60d5b6fe-24a0-4827-b92b-f31f13881e92']"));
+				.findElement(By.xpath("//a[@href='/buildings/60d5b6fe-24a0-4827-b92b-f31f13881e92/basic-info']"));
 		return element;
 	}
 

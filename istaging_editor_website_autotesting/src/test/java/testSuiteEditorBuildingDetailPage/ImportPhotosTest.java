@@ -18,11 +18,13 @@ import pageObjects.BuildingListPage;
 import pageObjects.LoginPage;
 import pageObjects.PanoramasPage;
 import testSuitesLoginPage.JsLoginPageTest;
+import utilities.GenericMethods;
 
 public class ImportPhotosTest extends JsLoginPageTest {
 	
 	@Test
 	public void importPhotos() throws Exception {
+		GenericMethods gm = new GenericMethods(driver);
 
 		LoginPage.FillEmailTextBox(driver, "joyautomation@staging.com.tw");
 		test.log(LogStatus.INFO, "Enter User Name...");
@@ -41,17 +43,39 @@ public class ImportPhotosTest extends JsLoginPageTest {
 		js.executeScript("window.location='https://vreditor-test.istaging.com/buildings';");
 		Thread.sleep(5000);
 		
-		BuildingListPage.selectBuildingForImportPhotos(driver);;
-		test.log(LogStatus.INFO, "Enter Building Detail Page...");
+		gm.getElement("buildingsCreateBuildingButton", "id").click();
+		test.log(LogStatus.INFO, "Create New Building...");
 		Thread.sleep(3000);
-		
-		PanoramasPage.selectPanoramasTab(driver);
+
+		gm.getElement("//input[@name='name']", "xpath").sendKeys("importPhotosTest");
+		test.log(LogStatus.INFO, "Input New Building Name...");
+		Thread.sleep(3000);
+
+		gm.getElement("//*[@id=\"app\"]/main/div[4]/div/div/div/form/div[2]/div/div/button", "xpath").click();
+		test.log(LogStatus.INFO, "Click Submit Btn...");
+		Thread.sleep(3000);
+
+		gm.getElement("//*[@id=\"app\"]/div[1]/div[3]/div[1]/ul/li[2]/a", "xpath").click();
 		test.log(LogStatus.INFO, "Select Panoramas Tab...");
 		Thread.sleep(3000);
 		
-		PanoramasPage.clickAddPanoramas(driver);
+		gm.getElement("//div[@class='add-panoramas']/button", "xpath").click();
 		test.log(LogStatus.INFO, "Click Add Panoramas Btn...");
 		Thread.sleep(3000);
+		
+//		js.executeScript("window.scrollBy(0,2600);");
+//		
+//		BuildingListPage.selectBuildingForImportPhotos(driver);;
+//		test.log(LogStatus.INFO, "Enter Building Detail Page...");
+//		Thread.sleep(3000);
+		
+//		PanoramasPage.selectPanoramasTab(driver);
+//		test.log(LogStatus.INFO, "Select Panoramas Tab...");
+//		Thread.sleep(3000);
+//		
+//		PanoramasPage.clickAddPanoramas(driver);
+//		test.log(LogStatus.INFO, "Click Add Panoramas Btn...");
+//		Thread.sleep(3000);
 	
 		PanoramasPage.importPhotos(driver);
 		test.log(LogStatus.INFO, "Choose Panoramas...");
@@ -59,7 +83,7 @@ public class ImportPhotosTest extends JsLoginPageTest {
 		
 		PanoramasPage.submitPhotos(driver);
 		test.log(LogStatus.INFO, "Import Panoramas...");
-		Thread.sleep(10000);
+		Thread.sleep(30000);
 		
 		WebElement primaryBtn = null;
 

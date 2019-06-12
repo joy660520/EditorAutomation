@@ -18,9 +18,10 @@ import pageObjects.BuildingListPage;
 import pageObjects.LoginPage;
 import pageObjects.PanoramasPage;
 import testSuitesLoginPage.JsLoginPageTest;
+import testSuitesLoginPage.LoginPageTest;
 import utilities.GenericMethods;
 
-public class ImportPhotosTest extends JsLoginPageTest {
+public class ImportPhotosTest extends LoginPageTest {
 	
 	@Test
 	public void importPhotos() throws Exception {
@@ -38,9 +39,6 @@ public class ImportPhotosTest extends JsLoginPageTest {
 		
 		BuildingListPage.clickGoToEditor(driver);
 		test.log(LogStatus.INFO, "Click GoToEditor Btn...");
-		Thread.sleep(5000);
-		
-		js.executeScript("window.location='https://vreditor-test.istaging.com/buildings';");
 		Thread.sleep(5000);
 		
 		gm.getElement("buildingsCreateBuildingButton", "id").click();
@@ -62,20 +60,6 @@ public class ImportPhotosTest extends JsLoginPageTest {
 		gm.getElement("//div[@class='add-panoramas']/button", "xpath").click();
 		test.log(LogStatus.INFO, "Click Add Panoramas Btn...");
 		Thread.sleep(3000);
-		
-//		js.executeScript("window.scrollBy(0,2600);");
-//		
-//		BuildingListPage.selectBuildingForImportPhotos(driver);;
-//		test.log(LogStatus.INFO, "Enter Building Detail Page...");
-//		Thread.sleep(3000);
-		
-//		PanoramasPage.selectPanoramasTab(driver);
-//		test.log(LogStatus.INFO, "Select Panoramas Tab...");
-//		Thread.sleep(3000);
-//		
-//		PanoramasPage.clickAddPanoramas(driver);
-//		test.log(LogStatus.INFO, "Click Add Panoramas Btn...");
-//		Thread.sleep(3000);
 	
 		PanoramasPage.importPhotos(driver);
 		test.log(LogStatus.INFO, "Choose Panoramas...");
@@ -85,15 +69,25 @@ public class ImportPhotosTest extends JsLoginPageTest {
 		test.log(LogStatus.INFO, "Import Panoramas...");
 		Thread.sleep(30000);
 		
+		WebElement elementTR;
+		try { //關閉panoramas頁面的導覽
+			elementTR = gm.getElement("/html/body/div[6]/div", "xpath");
+			gm.getElement("/html/body/div[6]/div/div[5]/a[1]", "xpath").click();
+			test.log(LogStatus.INFO, "Close panoramas page tutorial...");
+			Thread.sleep(2000);
+		} catch (org.openqa.selenium.NoSuchElementException ee) {
+			System.out.println("element doesn't exist");
+		}
+		
 		WebElement primaryBtn = null;
 
 		try {
-			primaryBtn = driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]"));
+			primaryBtn = driver.findElement(By.className("i-edit-list-container"));
 		} catch (Exception e) {
 			System.out.println(e);
 		}
 		Assert.assertTrue(primaryBtn != null);
-		test.log(LogStatus.PASS, "Verified import livetour successfully");
+		test.log(LogStatus.PASS, "Verified import panoramas successfully");
 
 		Thread.sleep(3000);
 

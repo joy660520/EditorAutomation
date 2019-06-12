@@ -19,9 +19,10 @@ import pageObjects.LoginPage;
 import pageObjects.MarkerEditorPage;
 import pageObjects.PanoramasPage;
 import testSuitesLoginPage.JsLoginPageTest;
+import testSuitesLoginPage.LoginPageTest;
 import utilities.GenericMethods;
 
-public class AddCustomIconTest extends JsLoginPageTest {
+public class AddCustomIconTest extends LoginPageTest {
 
 	@Test
 	public void addCustomIcons() throws Exception {
@@ -41,8 +42,7 @@ public class AddCustomIconTest extends JsLoginPageTest {
 		test.log(LogStatus.INFO, "Click GoToEditor Btn...");
 		Thread.sleep(5000);
 
-		js.executeScript("window.location='https://vreditor-test.istaging.com/buildings';");
-		Thread.sleep(5000);
+		
 
 		gm.getElement("buildingsCreateBuildingButton", "id").click();
 		test.log(LogStatus.INFO, "Create New Building...");
@@ -73,6 +73,16 @@ public class AddCustomIconTest extends JsLoginPageTest {
 		test.log(LogStatus.INFO, "Select Marker-Editor Tab...");
 		Thread.sleep(3000);
 
+		WebElement elementTR;
+		try { //關閉marker-editor頁面的導覽
+			elementTR = gm.getElement("//div[@class='introjs-tooltipReferenceLayer']/div", "xpath");
+			gm.getElement("//div[@class='introjs-tooltipbuttons']/a[1]", "xpath").click();
+			test.log(LogStatus.INFO, "Close marker-editor page tutorial...");
+			Thread.sleep(2000);
+		} catch (org.openqa.selenium.NoSuchElementException ee) {
+			System.out.println("element doesn't exist");
+		}
+		
 		gm.getElement("//*[@id=\"markerEditorButtonsContainer\"]/ul/li[1]/button/span[1]", "xpath").click();
 		test.log(LogStatus.INFO, "Click add New-Marker Btn...");
 		Thread.sleep(5000);

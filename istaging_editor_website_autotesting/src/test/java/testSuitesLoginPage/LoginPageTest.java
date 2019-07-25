@@ -48,9 +48,9 @@ public class LoginPageTest {
 
 		pf = new BuildingListPage();
 
-		// driver.manage().window().maximize();
-		// test.log(LogStatus.INFO, "Browser Maximized...");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//		driver.manage().window().maximize();
+//		test.log(LogStatus.INFO, "Browser Maximized...");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(baseUrl);
 		test.log(LogStatus.INFO, "Web Application Opened...");
 	}

@@ -56,7 +56,7 @@ public class JsLoginPageTest {
 
 //		driver.manage().window().maximize();
 //		test.log(LogStatus.INFO, "Browser Maximized...");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(baseUrl);
 		test.log(LogStatus.INFO, "Web Application Opened...");
 	}

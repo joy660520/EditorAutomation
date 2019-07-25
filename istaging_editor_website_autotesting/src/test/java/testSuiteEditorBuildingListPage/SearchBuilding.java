@@ -28,12 +28,9 @@ public class SearchBuilding extends JsLoginPageTest {
 
 		LoginPage.clickLoginBtn(driver);
 		test.log(LogStatus.INFO, "Click Submit Btn...");
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		BuildingListPage.clickGoToEditor(driver);
-		test.log(LogStatus.INFO, "Click GoToEditor Btn...");
-		Thread.sleep(5000);
 
 		WebElement element = gm.getElement("//*[@id=\"app\"]/main/div[2]/div[1]/div/div/div[2]/button", "xpath");
 		element.click();

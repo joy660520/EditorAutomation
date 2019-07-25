@@ -23,9 +23,9 @@ public class AccountLogoutTest extends LoginPageTest{
 		LoginPage.clickLoginBtn(driver);
 		test.log(LogStatus.INFO, "Click Submit Btn...");
 
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 
-		LoginPage.closeWelcome(driver);
+		
 		
 		BasicInfoPage.clickProfileImg(driver);
 		test.log(LogStatus.INFO, "Click Profile Image...");

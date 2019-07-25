@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Extent TestSuite]" parallel="tests">
-  <test thread-count="1" name="Create New Livetour Test(failed)" parallel="tests">
+  <test thread-count="1" name="Add Custom Icons Test(failed)" parallel="tests">
     <classes>
-      <class name="testSuiteEditorBuildingListPage.CreateNewLivetour">
+      <class name="testSuiteEditorBuildingDetailPage.AddCustomIconTest">
         <methods>
+          <include name="addCustomIcons"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="createNewLivetour"/>
         </methods>
-      </class> <!-- testSuiteEditorBuildingListPage.CreateNewLivetour -->
+      </class> <!-- testSuiteEditorBuildingDetailPage.AddCustomIconTest -->
     </classes>
-  </test> <!-- Create New Livetour Test(failed) -->
+  </test> <!-- Add Custom Icons Test(failed) -->
+  <test thread-count="1" name="Delete Custom Icons Test(failed)" parallel="tests">
+    <classes>
+      <class name="testSuiteEditorBuildingDetailPage.DeleteCustomIconTest">
+        <methods>
+          <include name="deleteCustomIcons"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testSuiteEditorBuildingDetailPage.DeleteCustomIconTest -->
+    </classes>
+  </test> <!-- Delete Custom Icons Test(failed) -->
 </suite> <!-- Failed suite [Extent TestSuite] -->

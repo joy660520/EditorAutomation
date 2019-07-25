@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56761" started-at="2019-06-12T02:59:02Z" finished-at="2019-06-12T02:59:59Z">
+  <suite name="Default suite" duration-ms="79300" started-at="2019-07-23T09:51:44Z" finished-at="2019-07-23T09:53:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56761" started-at="2019-06-12T02:59:02Z" finished-at="2019-06-12T02:59:59Z">
-      <class name="testSuiteEditorBuildingDetailPage.DeleteCustomIconTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuiteEditorBuildingDetailPage.DeleteCustomIconTest@55740540]" name="setUp" is-config="true" duration-ms="4378" started-at="2019-06-12T02:59:02Z" finished-at="2019-06-12T02:59:07Z">
+    <test name="Default test" duration-ms="79300" started-at="2019-07-23T09:51:44Z" finished-at="2019-07-23T09:53:04Z">
+      <class name="testSuiteEditorBuildingDetailPage.ImportPhotosTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testSuiteEditorBuildingDetailPage.ImportPhotosTest@568ff82]" name="setUp" is-config="true" duration-ms="5615" started-at="2019-07-23T09:51:44Z" finished-at="2019-07-23T09:51:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deleteCustomIcons()[pri:0, instance:testSuiteEditorBuildingDetailPage.DeleteCustomIconTest@55740540]" name="deleteCustomIcons" duration-ms="51923" started-at="2019-06-12T02:59:07Z" finished-at="2019-06-12T02:59:59Z">
+        <test-method status="PASS" signature="importPhotos()[pri:0, instance:testSuiteEditorBuildingDetailPage.ImportPhotosTest@568ff82]" name="importPhotos" duration-ms="73304" started-at="2019-07-23T09:51:50Z" finished-at="2019-07-23T09:53:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteCustomIcons -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuiteEditorBuildingDetailPage.DeleteCustomIconTest@55740540]" name="tearDown" is-config="true" duration-ms="438" started-at="2019-06-12T02:59:59Z" finished-at="2019-06-12T02:59:59Z">
+        </test-method> <!-- importPhotos -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuiteEditorBuildingDetailPage.ImportPhotosTest@568ff82]" name="tearDown" is-config="true" duration-ms="362" started-at="2019-07-23T09:53:03Z" finished-at="2019-07-23T09:53:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteCustomIcons status=SUCCESS method=DeleteCustomIconTest.deleteCustomIcons()[pri:0, instance:testSuiteEditorBuildingDetailPage.DeleteCustomIconTest@55740540] output={null}]]]>
+                <![CDATA[[TestResult name=importPhotos status=SUCCESS method=ImportPhotosTest.importPhotos()[pri:0, instance:testSuiteEditorBuildingDetailPage.ImportPhotosTest@568ff82] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testSuiteEditorBuildingDetailPage.DeleteCustomIconTest -->
+      </class> <!-- testSuiteEditorBuildingDetailPage.ImportPhotosTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

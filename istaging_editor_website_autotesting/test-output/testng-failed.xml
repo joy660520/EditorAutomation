@@ -5,9 +5,9 @@
     <classes>
       <class name="testSuiteEditorBuildingDetailPage.AddCustomIconTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
           <include name="addCustomIcons"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- testSuiteEditorBuildingDetailPage.AddCustomIconTest -->
     </classes>

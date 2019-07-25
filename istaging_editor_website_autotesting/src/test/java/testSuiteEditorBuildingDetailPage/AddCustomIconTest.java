@@ -36,11 +36,11 @@ public class AddCustomIconTest extends LoginPageTest {
 
 		LoginPage.clickLoginBtn(driver);
 		test.log(LogStatus.INFO, "Click Submit Btn...");
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 
-		BuildingListPage.clickGoToEditor(driver);
-		test.log(LogStatus.INFO, "Click GoToEditor Btn...");
-		Thread.sleep(5000);
+//		BuildingListPage.clickGoToEditor(driver);
+//		test.log(LogStatus.INFO, "Click GoToEditor Btn...");
+//		Thread.sleep(5000);
 
 		
 
@@ -71,7 +71,7 @@ public class AddCustomIconTest extends LoginPageTest {
 
 		PanoramasPage.selectMarkerEditorTab(driver);
 		test.log(LogStatus.INFO, "Select Marker-Editor Tab...");
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 
 		WebElement elementTR;
 		try { //關閉marker-editor頁面的導覽
@@ -88,7 +88,7 @@ public class AddCustomIconTest extends LoginPageTest {
 		Thread.sleep(5000);
 
 		gm.getElement(
-				"//*[@id=\"app\"]/div[1]/div[3]/div[2]/div[3]/div/div/div[1]/div[2]/div/div/div[2]/div/div[1]/div/span[3]",
+				"//*[@id=\"app\"]/div[1]/div[3]/div[2]/div[3]/div/div/div[1]/div[2]/div/div/div[2]/div/div[1]/div/i",
 				"xpath").click();
 		test.log(LogStatus.INFO, "Click add Custom-icon Btn...");
 		Thread.sleep(3000);

@@ -36,12 +36,7 @@ public class CreateNewLivetour extends LoginPageTest {
 
 		LoginPage.clickLoginBtn(driver);
 		test.log(LogStatus.INFO, "Click Submit Btn...");
-		Thread.sleep(3000);
-
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		BuildingListPage.clickGoToEditor(driver);
-		test.log(LogStatus.INFO, "Click GoToEditor Btn...");
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 
 		WebElement elementTR = gm.getElement("//*[@id=\"app\"]/section/div[2]/div/div", "xpath");
 		Thread.sleep(5000);

@@ -35,31 +35,27 @@ public class DeleteCustomIconTest extends JsLoginPageTest {
 
 		LoginPage.clickLoginBtn(driver);
 		test.log(LogStatus.INFO, "Click Submit Btn...");
-		Thread.sleep(3000);
-
-		BuildingListPage.clickGoToEditor(driver);
-		test.log(LogStatus.INFO, "Click GoToEditor Btn...");
-		Thread.sleep(5000);
+		Thread.sleep(8000);
+		
 
 		js.executeScript("window.location='https://vreditor-test.istaging.com/buildings';");
 		Thread.sleep(5000);
 		
-		js.executeScript("window.scrollBy(0,2600);");
 
-		gm.getElement("//a[@href='/buildings/65c59047-9e6e-4966-92b2-06fbd81bccf5/basic-info']", "xpath").click();
+		gm.getElement("//*[@id=\"buildingsList_0\"]/a", "xpath").click();
 		test.log(LogStatus.INFO, "Select Building For Delete Custom Icon...");
 		Thread.sleep(3000);
 
 		PanoramasPage.selectMarkerEditorTab(driver);
 		test.log(LogStatus.INFO, "Select Marker-Editor Tab...");
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 
 		gm.getElement("//*[@id=\"markerEditorButtonsContainer\"]/ul/li[1]/button/span[1]", "xpath").click();
 		test.log(LogStatus.INFO, "Click add New-Marker Btn...");
 		Thread.sleep(5000);
 
 		gm.getElement(
-				"//*[@id=\"app\"]/div[1]/div[3]/div[2]/div[3]/div/div/div[1]/div[2]/div/div/div[2]/div/div[1]/div/span[3]",
+				"//*[@id=\"app\"]/div[1]/div[3]/div[2]/div[3]/div/div/div[1]/div[2]/div/div/div[2]/div/div[1]/div/i",
 				"xpath").click();
 		test.log(LogStatus.INFO, "Click add Custom-icon Btn...");
 		Thread.sleep(3000);

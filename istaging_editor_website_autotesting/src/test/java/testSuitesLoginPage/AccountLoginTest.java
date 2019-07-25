@@ -23,19 +23,18 @@ public class AccountLoginTest extends LoginPageTest {
 		LoginPage.clickLoginBtn(driver);
 		test.log(LogStatus.INFO, "Click Submit Btn...");
 
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 
-		LoginPage.closeWelcome(driver);
 
 		WebElement primaryBtn = null;
 
 		try {
-			primaryBtn = driver.findElement(By.xpath("//a/img[@class='profile-image']"));
+			primaryBtn = driver.findElement(By.xpath("//a/img[@class='dropdown-image']")); //是否出現大頭照
 		} catch (Exception e) {
 			System.out.println(e);
 		}
 		Assert.assertTrue(primaryBtn != null);
-//		getScreenshots();
+
 		test.log(LogStatus.PASS, "Verified login successfully");
 
 		Thread.sleep(3000);

@@ -9,7 +9,7 @@ public class BasicInfoPage {
 	public static WebElement element = null;
 
 	public static void clickProfileImg(WebDriver driver) {
-		driver.findElement(By.xpath("//a[@class='dropdown-control']//img[@class='profile-image']")).click();
+		driver.findElement(By.xpath("//a/img[@class='dropdown-image']")).click();
 	}
 	
 	public static void clickLogout(WebDriver driver) {

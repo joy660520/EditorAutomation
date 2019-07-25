@@ -30,9 +30,6 @@ public class DeleteLivetour extends JsLoginPageTest {
 		test.log(LogStatus.INFO, "Click Submit Btn...");
 		Thread.sleep(3000);
 		
-		BuildingListPage.clickGoToEditor(driver);
-		test.log(LogStatus.INFO, "Click GoToEditor Btn...");
-		Thread.sleep(5000);
 		
 		js.executeScript("window.location='https://vreditor-test.istaging.com/buildings';");
 		Thread.sleep(5000);

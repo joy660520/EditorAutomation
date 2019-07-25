@@ -37,8 +37,7 @@ public class FacebookLoginTest extends LoginPageTest{
 		
 //        Thread.sleep(2000);
         
-        LoginPage.closeWelcome(driver);
-        test.log(LogStatus.INFO, "Close Welcome Msg...");
+        
 
         WebElement primaryBtn = null;
 

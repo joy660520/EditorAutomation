@@ -2,6 +2,7 @@ package pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.By.ById;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -9,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 public class BuildingListPage {
 	WebDriver driver;
 	public static WebElement element = null;
+	public static JavascriptExecutor js;
 
 	public static WebElement goToEditor(WebDriver driver) {
 		element = driver.findElement(By.xpath("//a[@class='nav-link']//img[@class='vrcam-image']"));
@@ -82,13 +84,15 @@ public class BuildingListPage {
 		element.click();
 	}
 
+	
 	public static void clickCopyLivetour(WebDriver driver) throws Exception {
-		WebElement mouseHover = driver
-				.findElement(By.xpath("//div[contains(@class,'i-list-title') and contains(text(),'sample')]"));
+		
 		Actions action = new Actions(driver);
+		WebElement mouseHover = driver
+				.findElement(By.xpath("//div/a[@href='/buildings/7dd5b35e-74db-4841-ad76-4dec8afedc55/basic-info']"));
 		action.moveToElement(mouseHover).perform();
 		WebElement copyLivetour = driver.findElement(By.xpath(
-				"//div[contains(@class,'i-list-title') and contains(text(),'sample')]//parent::a//following-sibling::div[@class='i-list-hover']/div/ul/li[3]"));
+				"//div/a[@href='/buildings/7dd5b35e-74db-4841-ad76-4dec8afedc55/basic-info']//parent::a//following-sibling::div[@class='i-list-hover']/div/ul/li[3]"));
 		Thread.sleep(3000);
 		action.moveToElement(copyLivetour).click().perform();
 	}

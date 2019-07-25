@@ -35,11 +35,8 @@ public class ImportPhotosTest extends LoginPageTest {
 
 		LoginPage.clickLoginBtn(driver);
 		test.log(LogStatus.INFO, "Click Submit Btn...");
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		
-		BuildingListPage.clickGoToEditor(driver);
-		test.log(LogStatus.INFO, "Click GoToEditor Btn...");
-		Thread.sleep(5000);
 		
 		gm.getElement("buildingsCreateBuildingButton", "id").click();
 		test.log(LogStatus.INFO, "Create New Building...");

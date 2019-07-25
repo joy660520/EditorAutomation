@@ -62,19 +62,6 @@ public class LoginPage {
 		element.click();
 	}
 
-	/*
-	 * 關閉alert param driver
-	 */
-	public static WebElement welcome(WebDriver driver) {
-		element = driver.findElement(By.cssSelector(".i-alert-close"));
-		return element;
-	}
-
-	public static void closeWelcome(WebDriver driver) {
-		element = welcome(driver);
-		element.click();
-	}
-
 	// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 	/*
 	 * 創建帳號元素 帳號已存在 密碼格式錯誤

@@ -48,21 +48,21 @@ public class DeleteCustomIconTest extends JsLoginPageTest {
 
 		PanoramasPage.selectMarkerEditorTab(driver);
 		test.log(LogStatus.INFO, "Select Marker-Editor Tab...");
-		Thread.sleep(10000);
+		Thread.sleep(20000);
 
 		gm.getElement("//*[@id=\"markerEditorButtonsContainer\"]/ul/li[1]/button/span[1]", "xpath").click();
 		test.log(LogStatus.INFO, "Click add New-Marker Btn...");
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 
 		gm.getElement(
 				"//*[@id=\"app\"]/div[1]/div[3]/div[2]/div[3]/div/div/div[1]/div[2]/div/div/div[2]/div/div[1]/div/i",
 				"xpath").click();
 		test.log(LogStatus.INFO, "Click add Custom-icon Btn...");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 
 		GenericMethods.deleteCustomIcon(driver);
 		test.log(LogStatus.INFO, "Delete All Custom-icons...");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 
 		gm.getElement(
 				"//*[@id=\"app\"]/div[1]/div[3]/div[2]/div[3]/div/div/div[1]/div[2]/div/div[2]/div/div[2]/form/div[2]/div/div/button",

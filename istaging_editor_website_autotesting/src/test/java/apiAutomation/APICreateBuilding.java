@@ -76,6 +76,10 @@ public class APICreateBuilding {
 		JsonObject jsonObject = parser.parse(sb.toString()).getAsJsonObject();
 		String objectId = jsonObject.get("objectId").getAsString();
 		return objectId;
+		
+		
+		
+		
 
 	}
 }

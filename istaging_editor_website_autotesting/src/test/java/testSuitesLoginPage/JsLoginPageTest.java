@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -16,6 +17,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -54,9 +58,11 @@ public class JsLoginPageTest {
 
 		pf = new BuildingListPage();
 
-//		driver.manage().window().maximize();
-//		test.log(LogStatus.INFO, "Browser Maximized...");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		test.log(LogStatus.INFO, "Browser Maximized...");
+//		WebDriverWait wait=new WebDriverWait(driver,15);
+//		wait.until(ExpectedConditions.textToBePresentInElementLocated(locator, text));
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(baseUrl);
 		test.log(LogStatus.INFO, "Web Application Opened...");
 	}

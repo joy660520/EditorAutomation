@@ -94,6 +94,6 @@ public class PanoramasPage {
 		driver.findElement(By
 				.xpath("//*[@id=\"app\"]/div[1]/div[3]/div[2]/div[2]/div/div[2]/div/div[2]/form/div[2]/div/div/button"))
 				.click();
-	}
+	}//*[@id="app"]/div[1]/div[3]/div[2]/div[2]/div/div[2]/div/div[2]/form/div[2]/div/div/button
 
 }
